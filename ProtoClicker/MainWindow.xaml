@@ -1,0 +1,29 @@
+﻿<Window x:Class="ProtoClicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProtoClicker"
+        mc:Ignorable="d"
+        Title="Clicker" Height="227" Width="711" ResizeMode="NoResize">
+    <Grid>
+        <Canvas x:Name="enemy_canvas" HorizontalAlignment="Left" Height="100" Margin="309,45,0,0" VerticalAlignment="Top" Width="100" Background="#FFF7F7F7" Focusable="True" MouseDown="enemy_canvas_MouseDown"/>
+        <Label Content="Enemy name:" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label x:Name="lb_enemyName" Content="" HorizontalAlignment="Left" Height="30" Margin="110,10,0,0" VerticalAlignment="Top" Width="181" Background="#FFF9F9F9"/>
+        <Label Content="Click to deal damage:" HorizontalAlignment="Left" Height="30" Margin="296,10,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Level:" HorizontalAlignment="Left" Height="30" Margin="585,10,0,0" VerticalAlignment="Top" Width="45"/>
+        <Label x:Name="lb_lvl" Content="0" HorizontalAlignment="Left" Height="30" Margin="635,10,0,0" VerticalAlignment="Top" Width="155"/>
+        <Label Content="Enemy hit points:" HorizontalAlignment="Left" Height="29" Margin="10,45,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label x:Name="lb_hp" Content="0" HorizontalAlignment="Left" Height="30" Margin="10,79,0,0" VerticalAlignment="Top" Width="281"/>
+        <Label Content="Gold from enemy:" HorizontalAlignment="Left" Height="29" Margin="10,114,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label x:Name="lb_gold" Content="0" HorizontalAlignment="Left" Height="30" Margin="10,150,0,0" VerticalAlignment="Top" Width="281"/>
+        <Label Content="Players gold:" HorizontalAlignment="Left" Height="29" Margin="414,45,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label x:Name="lb_playersGold" Content="0" HorizontalAlignment="Left" Height="30" Margin="414,80,0,0" VerticalAlignment="Top" Width="281"/>
+        <Label Content="Players damage:" HorizontalAlignment="Left" Height="29" Margin="414,115,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label x:Name="lb_playersDamage" Content="0" HorizontalAlignment="Left" Height="30" Margin="414,149,0,0" VerticalAlignment="Top" Width="281"/>
+        <Button x:Name="upgrade_button" Content="Upgrade" HorizontalAlignment="Left" Height="30" Margin="585,115,0,0" VerticalAlignment="Top" Width="89" Click="upgrade_button_Click"/>
+        <Button x:Name="button_next" Content="Next" HorizontalAlignment="Left" Height="29" Margin="359,150,0,0" VerticalAlignment="Top" Width="50" Click="button_next_Click"/>
+        <Button x:Name="button_repeat" Content="Repeat" HorizontalAlignment="Left" Height="29" Margin="309,150,0,0" VerticalAlignment="Top" Width="50" Click="button_repeat_Click"/>
+
+    </Grid>
+</Window>
